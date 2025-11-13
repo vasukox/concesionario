@@ -1,4 +1,18 @@
 <?php
+// Safe bootstrap: check DB connection before loading controller so the app
+// doesn't fatal when deployed to environments without a configured DB (like Vercel).
+require_once __DIR__ . '/../config/database.php';
+
+$database = new Database();
+$dbConn = $database->getConnection();
+
+if ($dbConn === null) {
+    // No DB available: show a friendly info page instead of loading the app.
+    include __DIR__ . '/../views/no_db.php';
+    exit();
+}
+
+// If DB exists, proceed to load controller which expects a working DB.
 require_once __DIR__ . '/../controllers/VehicleController.php';
 
 $controller = new VehicleController();
