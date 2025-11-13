@@ -1,0 +1,7 @@
+vendor
+node_modules
+.git
+public/uploads
+.DS_Store
+Thumbs.db
+.env
