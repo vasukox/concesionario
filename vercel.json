@@ -12,5 +12,5 @@
       "dest": "public/index.php"
     }
   ]
-}</content>
+}
 <parameter name="filePath">c:\xampp\htdocs\vehiculos_app\vercel.json
