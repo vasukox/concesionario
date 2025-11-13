@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /b \"c:\\xampp\\htdocs\\vehiculos_app\\public\")",
+      "Bash(chmod:*)",
+      "Bash(mysql:*)",
+      "Bash(php -r:*)",
+      "Bash(mysql.exe:*)",
+      "Bash(dir /b c:xampphtdocsvehiculos_app)",
+      "Bash(php test_db_debug.php:*)",
+      "Bash(php fix_precio_column.php:*)",
+      "Bash(php add_descripcion_calificacion.php:*)",
+      "Bash(php -S:*)",
+      "Bash(mysqldump:*)",
+      "Bash(c:xampphtdocsvehiculos_appbackup_concesionario.sql)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
