@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/index.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "public/index.php"
+    }
+  ]
+}</content>
+<parameter name="filePath">c:\xampp\htdocs\vehiculos_app\vercel.json
